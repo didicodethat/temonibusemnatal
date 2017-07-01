@@ -12,6 +12,10 @@ body {
     background: white;
 }
 
+.main-section {
+    margin: 10px 0;
+}
+
 .top-level-card {
     border-bottom: 3px solid #ddd;
     margin: 0 3px;
@@ -89,4 +93,14 @@ a.top-level-card:hover, a.top-level-card:active {
 .hidden {
     display: none;
     height: 0px;
+}
+
+.bottom-square-advertisement{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bottom-ad-holder{
+    width: 336px;
+    display: inline-block;
 }
