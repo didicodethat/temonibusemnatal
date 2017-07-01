@@ -1,27 +1,61 @@
 html {
     font-family: 'Spectral', serif;
+    font-size: 16px;
 }
 
 body {
-    background: #12210c;
+    background: white;
     color: #222;
 }
 
 .top-level-section {
     background: white;
+}
+
+.top-level-card {
+    border-bottom: 3px solid #ddd;
+    margin: 0 3px;
+    height: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 10px 40px;
-    border-bottom:3px solid #ddd;
+    padding-left: 15px;
+    display: block;
+    color: #222;
+}
+
+a.top-level-card:hover, a.top-level-card:active {
+    text-decoration: none;
+    color: #3333ee;
+    background: #eee;
+}
+
+.share-buttons .top-level-card{
+    background: #e3f9c7;
+    border-bottom-color: #AFBF98;
+}
+
+.share-buttons a.top-level-card:hover, 
+.share-buttons a.top-level-card:active{
+    background: #b2d683;
+}
+
+.top-level-section p{
+    margin: 5px 0;
 }
 
 .busses-are-ok h1 {
-    font-size: 5.5em;
+    font-size: 3em;
     margin: 0;
 }
 
 .busses-are-ok h2 {
     margin: 0;
+    font-size: 1em;
+}
+
+.section-description{
+    color: grey;
+    font-size: 0.9em;
 }
 
 .ok {
@@ -33,10 +67,23 @@ body {
 }
 
 .section-icon {
-    width: 100px;
-    height: 100px;
-    background: #eee;
-    display: block;
+    border-radius: 100%;
+    color: #12210c;
+    display: flex;
+    align-content: center;
+    font-size: 3em;
+    flex-direction: column;
+    text-align: center;
+}
+
+.secondary .section-icon {
+    font-size: 2em;
+}
+
+.section-icon-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hidden {
