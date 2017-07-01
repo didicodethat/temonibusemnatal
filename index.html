@@ -2,108 +2,71 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Metatags -->
     <meta charset="UTF-8">
-    <title>40% - Tem ônibus em natal?</title>
-    <link rel="shortcut icon" href="nao.ico">
-    <!-- <link rel="favicon" href="nao.ico"> -->
-    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="og:title" content="Está Passando ônibus em natal?">
     <meta name="og:description" content="Descubra se os ônibus de natal estão funcinando hoje!">
-    <style>
-        html {
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Spectral', serif;
-        }
+    
+    <title>40% - Tem ônibus em natal?</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="nao.ico">
+    <!-- <link rel="favicon" href="nao.ico"> -->
 
-        body {
-            margin: 0;
-            background: #222;
-            color: #EEE;
-            display: flex;
-            min-height: 99.9vh;
-            justify-content: center;
-            flex-direction: column;
-        }
+    <!-- Remote stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Local stylesheets -->
+    <link rel="stylesheet" href="/style.css">
 
-        header {
-            width: 100%;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 13vw;
-            margin: 0;
-        }
-
-        h2 {
-            text-align: center;
-            margin: 0;
-        }
-
-        .sim {
-            color: #88b947;
-        }
-
-        .nao {
-            color: red;
-        }
-
-        .links {
-            text-align: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .links a,
-        .links a:hover,
-        .links a:active {
-            color: white;
-        }
-
-        .advertisement {
-            display: flex;
-            justify-content: center;
-        }
-
-    </style>
+    <!-- Remote scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Local scripts -->
+    <script src="/app.js"></script>
 </head>
 
 <body>
-    <header>
-        <h2>Os ônibus estão funcionando hoje?</h2>
-        <!-- <h1 class="sim"> Sim! </h1> -->
-        <h1 class="nao"> 40% da frota </h1>
-        
-        <ul class="links">
-            <!-- <li><a href="https://goo.gl/forms/6C079n0jUwNJpDHj2">Clique aqui para ser avisado se eles pararem de funcionar</a></li> -->
-            <li><a href="https://goo.gl/forms/6C079n0jUwNJpDHj2">Clique aqui para ser avisado quando eles voltarem à funcionar</a></li>
-            <li>
-                <div class="fb-share-button" data-href="http://temonibusemnatal.getforge.io/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftemonibusemnatal.getforge.io%2F&amp;src=sdkpreparse">Compartilhar no Facebook</a></div>
-            </li>
-            <li></li>
-            <li>
-                <a class="twitter-share-button"
-                  href="https://twitter.com/intent/tweet?text=http://temonibusemnatal.getforge.io/ Descubra se está passando ônibus hoje em natal.">
-                Compartilhar no twitter</a>
-            </li>
-        </ul>
-        <div class="advertisement">
-            <script type="text/javascript">
-                google_ad_client = "ca-pub-0645216011874310";
-                google_ad_slot = "7977057710";
-                google_ad_width = 336;
-                google_ad_height = 280;
-            </script>
-            <!-- Main-TemOnibusEmNatal-Ad -->
-            <script type="text/javascript"
-            src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
+    <section class="container-fluid top-level-section">
+        <div class="row">
+            <div class="col-2">
+                <picture class="section-icon"><i class="fa fa-question"></i></picture>
+            </div>
+            <div class="col busses-are-ok">
+                <h2>Os ônibus estão funcionando agora?</h2>
+                <h1 class="ok">Sim</h1>
+            </div>
         </div>
-    </header>
+    </section>
+
+    <section class="share-buttons container-fluid top-level-section">
+        
+    </section>
+
+    <section class="notify-me container-fluid top-level-section">
+        
+    </section>
+
+    <section class="partners container-fluid top-level-section">
+        
+    </section>
+
+
+    <!-- 
+    <section class="advertisement container">
+        <script type="text/javascript">
+            google_ad_client = "ca-pub-0645216011874310";
+            google_ad_slot = "7977057710";
+            google_ad_width = 336;
+            google_ad_height = 280;
+        </script>
+        <script type="text/javascript"
+        src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </section>
+    -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -115,5 +78,4 @@
 
     </script>
 </body>
-
 </html>

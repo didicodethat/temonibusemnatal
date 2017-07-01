@@ -1,0 +1,45 @@
+html {
+    font-family: 'Spectral', serif;
+}
+
+body {
+    background: #12210c;
+    color: #222;
+}
+
+.top-level-section {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 40px;
+    border-bottom:3px solid #ddd;
+}
+
+.busses-are-ok h1 {
+    font-size: 5.5em;
+    margin: 0;
+}
+
+.busses-are-ok h2 {
+    margin: 0;
+}
+
+.ok {
+    color: #88b947;
+}
+
+.not-ok {
+    color: red;
+}
+
+.section-icon {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    display: block;
+}
+
+.hidden {
+    display: none;
+    height: 0px;
+}
